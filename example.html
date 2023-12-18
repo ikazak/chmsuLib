@@ -1,0 +1,38 @@
+<div id="div">
+<button id="x" onclick="xs()">X</button>
+
+</div>
+<button id="small" onclick="small()">small</button>
+<button id="large" onclick="large()">large</button>
+
+<style>
+#div{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#small{
+    background-color: green;
+}
+
+
+</style>
+<script>
+    function xs(){
+        document.getElementById('div').style.display = "none";
+        document.getElementById('x').style.display = "none";
+    }
+    function large(){
+        document.getElementById('div').style.height = "500px";
+        document.getElementById('div').style.width = "500px";
+    }
+    function small(){
+        document.getElementById('div').style.display = "";
+        document.getElementById('x').style.display = "";
+
+    }
+    window.onload = function(){
+        xs();
+    }   
+
+</script>
